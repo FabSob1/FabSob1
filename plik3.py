@@ -2,9 +2,10 @@ import math
 import sys
 
 print ("Podaj wartosci funkcji: a^2x + bx +c: ")
-a = int(sys.argv[1])
-b = int(sys.argv[2])
-c = int(sys.argv[3])
+a,b,c = sys.argv[1:]
+a = int(a)
+b = int(b)
+c = int(c)
 #a^2x + bx + c
 def fun(a, b, c):
     b = b*b
